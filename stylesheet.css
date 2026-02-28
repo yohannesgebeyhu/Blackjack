@@ -1,0 +1,63 @@
+body{
+	background-image:linear-gradient( rgba(186, 182, 170, 0.5), rgba(186, 182, 170, 0.5)), url(../../Blackjack.jpg);
+}
+.game {
+	margin :100px auto;
+	width: 300px;
+	padding: 10px 50px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-position: fixed;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: white;
+	font-weight: bold; 
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.game::before{
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(../../green.jpg);
+	background-size: cover;
+	opacity: 0.7;
+	z-index: -1;
+
+}
+h1 {
+	color: goldenrod;
+	
+}
+
+#message-el{
+
+	font-style: italic;
+}
+button{
+
+	width: 200px;
+	margin: 10px auto;
+	display: block;
+	padding:5px 5px;
+	color: darkgreen;
+	background: goldenrod;
+	font-weight: bolder;
+	border: none;
+	font-size: larger;
+	border-radius: 5px;
+	transition: scale() 0.3s ease-in-out;
+
+
+}
+button:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+
+}
